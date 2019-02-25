@@ -4,9 +4,10 @@
   ],
   "presets": [
     ["@babel/preset-env", {
-      "forceAllTransforms": true,
-      "modules": "commonjs"
+      "modules": "commonjs",
+      "debug": true
     }],
+    "@babel/preset-typescript",
     "@babel/preset-react"
   ]
 }

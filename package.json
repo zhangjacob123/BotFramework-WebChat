@@ -26,12 +26,28 @@
       "lcov",
       "text-summary"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/__tests__/setup/setupTestFramework.js",
+    "moduleDirectories": [
+      "node_modules",
+      "packages"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "ts"
+    ],
+    "setupTestFrameworkScriptFile1": "<rootDir>/__tests__/setup/setupTestFramework.js",
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/__tests__/setup/"
     ],
-    "testRegex": "(/__tests__/.*)\\.jsx?$"
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
+    "testMatch1": [
+      "\\.spec\\.jsx?$",
+      "(/__tests__/.*)\\.jsx?$"
+    ],
+    "transform": {
+      "^.+\\.(t|j)sx?$": "./babel-jest-config.js"
+    }
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -46,12 +62,14 @@
     "watch": "lerna run --parallel --scope=botframework-webchat* --stream watch"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "coveralls": "^3.0.2",
     "get-port": "^4.0.0",
     "jest": "^23.6.0",
