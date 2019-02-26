@@ -18,9 +18,12 @@
   "keywords": [],
   "jest": {
     "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "\\.json$",
-      "/node_modules/"
+    "collectCoverageFrom": [
+      "**/packages/**/src/**/*.{js,jsx,ts}",
+      "!**/*.spec.js",
+      "!**/playground/**",
+      "!**/node_modules/**",
+      "!**/*.json"
     ],
     "coverageReporters": [
       "lcov",
@@ -35,16 +38,12 @@
       "jsx",
       "ts"
     ],
-    "setupTestFrameworkScriptFile1": "<rootDir>/__tests__/setup/setupTestFramework.js",
-    "testEnvironment": "node",
+    "setupTestFrameworkScriptFile": "<rootDir>/__tests__/setup/setupTestFramework.js",
     "testPathIgnorePatterns": [
-      "<rootDir>/__tests__/setup/"
+      "<rootDir>/__tests__/setup/",
+      "<rootDir>/packages/playground/"
     ],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
-    "testMatch1": [
-      "\\.spec\\.jsx?$",
-      "(/__tests__/.*)\\.jsx?$"
-    ],
+    "testRegex": "/__tests__/.*\\.[jt]sx?$",
     "transform": {
       "^.+\\.(t|j)sx?$": "./babel-jest-config.js"
     }
@@ -57,13 +56,14 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lerna-publish": "lerna publish",
     "prepublishOnly": "lerna run --scope=botframework-webchat* --scope=playground --stream prepublishOnly",
-    "test": "jest",
+    "test": "jest --no-cache",
     "test:all": "lerna run --parallel --stream test",
     "watch": "lerna run --parallel --scope=botframework-webchat* --stream watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",

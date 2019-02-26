@@ -1,11 +1,11 @@
 {
   "plugins": [
-    "@babel/plugin-proposal-object-rest-spread"
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties"
   ],
   "presets": [
     ["@babel/preset-env", {
-      "modules": "commonjs",
-      "debug": true
+      "modules": "commonjs"
     }],
     "@babel/preset-typescript",
     "@babel/preset-react"
