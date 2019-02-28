@@ -1,11 +1,4 @@
 {
-  "env": {
-    "test": {
-      "plugins": [
-        "babel-plugin-istanbul"
-      ]
-    }
-  },
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-transform-runtime",
@@ -19,6 +12,6 @@
       },
       "modules": "commonjs"
     }],
-    "@babel/react"
+    "@babel/preset-react"
   ]
 }
