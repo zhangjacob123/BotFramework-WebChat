@@ -1,24 +1,24 @@
-# Sample3 -  Getting started with Web Chat CDN
+# Sample4 -  Getting started with Web Chat CDN
 
-> This is a great Sample3 for first-time Web Chat users.
+> This is a great Sample4 for first-time Web Chat users.
 
 A simple web page with a maximized and full-featured Web Chat embed from a CDN. This includes Adaptive Cards, Cognitive Services, and Markdown-It dependencies.
 
-# Test out the hosted Sample3
+# Test out the hosted Sample4
 
 - [Try out MockBot](https://microsoft.github.io/BotFramework-WebChat/01.a.getting-started-full-bundle)
 
 # How to run locally
 
 - Fork this repository
-- Navigate to `/Your-Local-WebChat/Sample3s/01.a.getting-started-full-bundle` in command line
+- Navigate to `/Your-Local-WebChat/Sample4s/01.a.getting-started-full-bundle` in command line
 - Run `npx serve` in the full-bundle directory
 - Browse to [http://localhost:5000/](http://localhost:5000/)
 
 # Things to try out
 
 - Type `help`: you should see a full list of MockBot features
-- Type `markdown`: you should see the Sample3 of Markdown
+- Type `markdown`: you should see the Sample4 of Markdown
 - Type `card weather`: you should see a weather card built using Adaptive Cards
 - Type `layout carousel`: you should see a carousel of cards
    - Resize the window and see how the carousel changes size
@@ -138,16 +138,16 @@ Here is the finished `index.html`:
 
 ## Other CDN bundles
 
-Check out the hosted Sample3s and source code for other CDN bundle options below.
+Check out the hosted Sample4s and source code for other CDN bundle options below.
 
-- [Full bundle with polyfills for ES5 browsers bot](https://microsoft.github.io/BotFramework-WebChat/01.b.getting-started-es5-bundle) | [(Full bundle with polyfills for ES5 browsers source code)](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample3s/01.b.getting-started-es5-bundle)
-- [Minimal bundle bot](https://microsoft.github.io/BotFramework-WebChat/02.a.getting-started-minimal-bundle) | [(Minimal bundle source code)](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample3s/02.a.getting-started-minimal-bundle)
-- [Minimal bundle with Markdown bot](https://microsoft.github.io/BotFramework-WebChat/02.b.getting-started-minimal-markdown) | [(Minimal bundle with Markdown source code)](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample3s/02.b.getting-started-minimal-markdown)
+- [Full bundle with polyfills for ES5 browsers bot](https://microsoft.github.io/BotFramework-WebChat/01.b.getting-started-es5-bundle) | [(Full bundle with polyfills for ES5 browsers source code)](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample4s/01.b.getting-started-es5-bundle)
+- [Minimal bundle bot](https://microsoft.github.io/BotFramework-WebChat/02.a.getting-started-minimal-bundle) | [(Minimal bundle source code)](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample4s/02.a.getting-started-minimal-bundle)
+- [Minimal bundle with Markdown bot](https://microsoft.github.io/BotFramework-WebChat/02.b.getting-started-minimal-markdown) | [(Minimal bundle with Markdown source code)](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample4s/02.b.getting-started-minimal-markdown)
 
 ## CDN sunburst chart
 
 [Web Chat bundles sunburst chart](http://cdn.botframework.com/botframework-webchat/master/stats.html) - provides a visual of the contents of the various Web Chat bundles
 
-## Full list of Web Chat hosted Sample3s
+## Full list of Web Chat hosted Sample4s
 
-View the list of [available Web Chat Sample3s](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample3s)
+View the list of [available Web Chat Sample4s](https://github.com/Microsoft/BotFramework-WebChat/tree/master/Sample4s)
